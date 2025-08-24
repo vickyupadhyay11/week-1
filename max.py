@@ -1,8 +1,12 @@
+# Program to find maximum among three numbers without using inbuilt functions
 
-a = int(input("Enter first integer: "))
-b = int(input("Enter second integer: "))
-c = int(input("Enter third integer: "))
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
 
-
-maximum = max(a, b, c)
-print("The maximum number is:", maximum)
+if( a >= b and a >= c):
+    print("Maximum number is:", a)
+elif( b >= a and b >= c):
+    print("Maximum number is:", b)
+else:
+    print("Maximum number is:", c)
